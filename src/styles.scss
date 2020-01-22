@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.invalid{
+    font-family: 'NokiaPureText-Regular';
+    font-size: 12px !important;
+    color: red !important;
+}
+.validBox{
+border:1px solid green !important;
+}
+.invalidBox{
+    border:1px solid red !important;  
+}
+.pointer {
+    cursor: pointer;
+}

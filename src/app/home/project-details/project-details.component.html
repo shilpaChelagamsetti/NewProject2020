@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="row">
+        <h5>
+            Project Details
+        </h5>
+    </div>
+    <div class="row">
+        <!-- projects > p1 > project details -->
+        <span style="font-size:14px;">
+            <a routerLink="/mainpage/projects">Projects </a>&gt;
+            <span class="pointer">
+                <a routerLink="/mainpage/projects">{{prj}} </a>
+                <!-- <a (click)="navigateToProject(prj)">{{prj}} </a> -->
+            </span>&gt;project details</span>
+    </div>
+    <div class="row">
+        <div class="col-md-12" *ngFor="let project of projectDetailsArray;let i=index" style="padding: 10px;">
+            <div class="row" [ngStyle]="{'background-color':'#EFEFEF' }">
+                <div class="col-md-12 " (click)="handleProjects(i)">
+                    Name:&nbsp; {{project.pname}}
+                </div>
+            </div>
+
+
+            <div>
+                <div class="row" style="border-radius: 5px;">
+                    <div class="col-md-12">{{project.pname}}</div>
+                    <div class="col-md-12">{{project.pstatus}}</div>
+                    <div class="col-md-12">{{project.pduration}}</div>
+                    <div class="col-md-12">{{project.ptechnology}}</div>
+                    <div class="col-md-12">{{project.pdetails}}</div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

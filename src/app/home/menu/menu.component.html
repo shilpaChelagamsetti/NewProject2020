@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row mx-0">
+        <h4>My Project</h4>
+    </div>
+    <div class="row mx-0 lineHover px-3">
+        <span class="pointer" routerLink="/mainpage/students" routerLinkActive="highlight" >Students</span>
+    </div>
+    <div class="row mx-0 lineHover px-3">
+        <span class="pointer" routerLink="/mainpage/projects" routerLinkActive="highlight">Projects</span>
+    </div>
+    <div class="row" *ngFor="let project of projectsArray;let i=index">
+        <div class="col-md-12  pointer lineHover leftpadding">
+        {{project.pname}}
+      </div>
+    </div>
+    <div class="row mx-0 lineHover px-3" >
+        <span class="pointer" routerLinkActive="highlight">Marks</span>
+    </div>
+    <div class="row mx-0 lineHover px-3">
+        <span class="pointer" routerLinkActive="highlight">Subjects</span>
+    </div>
+</div>
