@@ -12,12 +12,22 @@
                 </div>
             </div>
             <div>
-                <div class="row" *ngIf="project.showProjDetails" [ngStyle]="{'background-color': '#bbe1fa'}" style="border-radius: 5px;">
-                    <div class="col-md-12"> Name:&nbsp; {{project.pname}}</div>
-                    <div class="col-md-12">{{project.pstatus}}</div>
-                    <div class="col">{{project.pduration}}</div>
-                    <div class="col">{{project.ptechnology}}</div>
-                    <div class="col pointer lineHover" (click)="displayProjDetails(i)">{{project.pdetails}}</div>
+                <div class="row" *ngIf="project.showProjDetails" [ngStyle]="{'background-color': '#EFEFEF'}" style="border-radius: 5px;">
+                    <div class="col-md-12" style="padding: 10px;">
+                        <strong class="hightlight-menu">Name:&nbsp; {{project.pname}}</strong>
+                    </div>
+                    <div class="col-md-12" style="padding: 10px;">
+                        <span class="hightlight-menu">{{project.pstatus}}</span>
+                    </div>
+                    <div class="col-md-12" style="padding: 10px;">
+                        <span class="hightlight-menu">{{project.pduration}}</span>
+                    </div>
+                    <div class="col" style="padding: 10px;">
+                        <span class="hightlight-menu">{{project.ptechnology}}</span>
+                    </div>
+                    <div class="col pointer" (click)="displayProjDetails(i)">
+                        <span class="highlightFields">{{project.pdetails}}</span>
+                    </div>
                     <!-- <div class="col pointer lineHover" routerLink="/mainpage/projectDetails/" routerLinkActive="highlight">{{project.pdetails}}</div> -->
                 </div>
             </div>
