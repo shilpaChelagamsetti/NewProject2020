@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
       if ($(window).scrollTop() <= ($(document).height() - $(window).height())) {
         console.log("At last Before", this.showMore);
         document.getElementById('pqw').style.visibility = "visible";
-        document.getElementById('pqw').style.animation = "fadeIn 5s";
+      document.getElementById('pqw').style.animation = "fadeIn 5s";
         // this.showMore = true;
         // console.log("At last", this.showMore);
       }
