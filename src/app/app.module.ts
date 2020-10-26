@@ -9,7 +9,8 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { MenuComponent } from './home/menu/menu.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { StudentsComponent } from './home/students/students.component';
-import { ProjectDetailsComponent } from './home/project-details/project-details.component'
+import { ProjectDetailsComponent } from './home/project-details/project-details.component';
+import { ChartsModule,ThemeService } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,12 @@ import { ProjectDetailsComponent } from './home/project-details/project-details.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule, FormsModule
+    ReactiveFormsModule, 
+    FormsModule,
+    ChartsModule
   ],
-  providers: [],
+  exports: [ChartsModule],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
